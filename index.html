@@ -1,0 +1,248 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sefin — Creative Developer & Designer</title>
+    <meta
+      name="description"
+      content="Personal portfolio of Sefin, a creative developer and designer specializing in modern, visually striking digital experiences."
+    />
+
+    <link rel="icon" href="favicon.ico" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body data-theme="light">
+    <!-- Preloader -->
+    <div class="preloader" id="preloader">
+      <div class="preloader__logo">
+        <img src="assets/logo.png" alt="Sefin Logo Loader" />
+      </div>
+    </div>
+
+    <!-- Custom Cursor -->
+    <div class="cursor"></div>
+
+    <!-- Header (Logo and Theme Toggle only) -->
+    <header class="header">
+      <div class="header__logo">
+        <a href="#"><img src="assets/logo.png" alt="Sefin Logo" id="logo" /></a>
+      </div>
+      <div class="header__theme-toggle">
+        <button class="theme-toggle" id="theme-toggle" title="Toggle theme">
+          <svg
+            class="sun"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <circle cx="12" cy="12" r="5"></circle>
+            <line x1="12" y1="1" x2="12" y2="3"></line>
+            <line x1="12" y1="21" x2="12" y2="23"></line>
+            <line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line>
+            <line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line>
+            <line x1="1" y1="12" x2="3" y2="12"></line>
+            <line x1="21" y1="12" x2="23" y2="12"></line>
+            <line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line>
+            <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line>
+          </svg>
+          <svg
+            class="moon"
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 24 24"
+            fill="none"
+            stroke="currentColor"
+            stroke-width="2"
+            stroke-linecap="round"
+            stroke-linejoin="round"
+          >
+            <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path>
+          </svg>
+        </button>
+      </div>
+    </header>
+
+    <!-- Standalone Menu Toggle Button -->
+    <div class="menu-toggle" id="menu-toggle">
+      <span class="line"></span>
+      <span class="line"></span>
+    </div>
+
+    <!-- Fullscreen Menu -->
+    <div class="menu-overlay" id="menu-overlay">
+      <div class="menu-overlay__panel"></div>
+      <div class="menu-overlay__panel"></div>
+      <nav class="menu-nav">
+        <a href="#about" class="menu-nav__link">About</a>
+        <a href="#projects" class="menu-nav__link">Projects</a>
+        <a href="#featured-projects" class="menu-nav__link">Featured</a>
+        <a href="#contact" class="menu-nav__link">Contact</a>
+      </nav>
+    </div>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero">
+        <h1 class="hero__title" id="hero-title">
+          Hi, I'm Sefin. <br />
+          Creative Developer <br />
+          & Designer.
+        </h1>
+        <p class="hero__subtitle">
+          I build modern, visually striking websites, apps, and digital
+          experiences.
+        </p>
+        <div class="scroll-indicator">SCROLL</div>
+      </section>
+
+      <!-- About Section -->
+      <section id="about" class="section">
+        <div class="section__container">
+          <p class="section__text" data-animate>
+            I'm Sefin, a passionate creative from Bhaktapur, Nepal. I specialize
+            in web design, graphics, and frontend development. My goal is to
+            build impactful digital projects and grow a company that reaches
+            millions worldwide.
+          </p>
+        </div>
+      </section>
+
+      <!-- Projects Section -->
+      <section id="projects" class="section">
+        <div class="section__container">
+          <h2 class="section__title" data-animate>All Projects</h2>
+          <div class="project-list">
+            <div class="project-item" data-animate data-image="assets/web.jpg">
+              <a href="#" class="project-item__link"
+                ><span class="project-item__title">Web Development</span
+                ><span class="project-item__category"
+                  >Strategy / Design / Code</span
+                ></a
+              >
+            </div>
+            <div class="project-item" data-animate data-image="assets/design.jpg">
+              <a href="#" class="project-item__link"
+                ><span class="project-item__title">Graphics Design</span
+                ><span class="project-item__category"
+                  >Branding / Visuals</span
+                ></a
+              >
+            </div>
+            <div
+              class="project-item"
+              data-animate
+              data-image="assets/mob.jpg"
+            >
+              <a href="#" class="project-item__link"
+                ><span class="project-item__title">Mobile Apps</span
+                ><span class="project-item__category"
+                  >UI/UX / Development</span
+                ></a
+              >
+            </div>
+            <div
+              class="project-item"
+              data-animate
+              data-image="assets/branding.jpg"
+            >
+              <a href="#" class="project-item__link"
+                ><span class="project-item__title">Branding</span
+                ><span class="project-item__category"
+                  >Identity / Strategy</span
+                ></a
+              >
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Featured Projects Section -->
+      <section id="featured-projects" class="section section--alt">
+        <div class="section__container">
+          <h2 class="section__title" data-animate>Featured Projects</h2>
+          <div class="featured-grid">
+            <div class="featured-card" data-animate>
+              <div class="featured-card__image-container">
+                <img src="assets/ecom.jpg" alt="Featured Project 1" />
+              </div>
+              <div class="featured-card__overlay">
+                <p class="featured-card__tools">
+                  Result: 200% User Engagement Increase
+                </p>
+              </div>
+              <div class="featured-card__content">
+                <h3 class="featured-card__title">E-commerce Platform</h3>
+                <p class="featured-card__description">
+                  A visually-driven online store.
+                </p>
+              </div>
+            </div>
+            <div class="featured-card" data-animate>
+              <div class="featured-card__image-container">
+                <img src="assets/project.webp" alt="Featured Project 2" />
+              </div>
+              <div class="featured-card__overlay">
+                <p class="featured-card__tools">Tools: Figma, React, GSAP</p>
+              </div>
+              <div class="featured-card__content">
+                <h3 class="featured-card__title">Interactive Portfolio</h3>
+                <p class="featured-card__description">
+                  A portfolio for a digital artist.
+                </p>
+              </div>
+            </div>
+            <div class="featured-card" data-animate>
+              <div class="featured-card__image-container">
+                <img src="assets/mobile.jpg" alt="Featured Project 3" />
+              </div>
+              <div class="featured-card__overlay">
+                <p class="featured-card__tools">
+                  Tools: Swift, Firebase, Lottie
+                </p>
+              </div>
+              <div class="featured-card__content">
+                <h3 class="featured-card__title">Mindfulness App</h3>
+                <p class="featured-card__description">
+                  An iOS app for guided meditation.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact Section -->
+      <section id="contact" class="section contact-section">
+        <div class="section__container">
+          <p class="contact-section__text" data-animate>
+            Interested in collaborating?
+          </p>
+          <a
+            href="mailto:sefingwachha@gmail.com"
+            class="contact-section__link"
+            data-animate
+            >Let's create something.</a
+          >
+        </div>
+      </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+      <p>© 2026 Sefin — Creative Developer & Designer</p>
+    </footer>
+
+    <div class="project-image-container"></div>
+    <script src="js/script.js"></script>
+  </body>
+</html>
