@@ -568,7 +568,7 @@ body.menu-active .menu-nav__link:nth-child(4) {
     padding: 1.5rem;
   }
   .header__theme-toggle {
-    left: 1.5rem;
+    /* left: 1.5rem; */
     transform: translateX(0);
   }
   .menu-toggle {
